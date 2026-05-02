@@ -18,6 +18,12 @@ spring:
     multipart:
       max-file-size: 10MB
       max-request-size: 10MB
+  rabbitmq:
+    host: localhost      # use 'rabbitmq' when running via Docker
+    port: 5672
+    username: guest
+    password: guest
+
 
 file:
   upload-dir: ./uploads
