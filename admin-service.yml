@@ -23,7 +23,7 @@ microservices:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
+      defaultZone: http://service-registry:8761/eureka/
 
 springdoc:
   api-docs:
@@ -38,4 +38,4 @@ management:
 
   zipkin:
     tracing:
-      endpoint: http://localhost:9411/api/v2/spans
+      endpoint: http://service-registry:9411/api/v2/spans
